@@ -8,7 +8,7 @@ class AIGenScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.db = Database()  
-        self.api_key = "AIzaSyCOZh59AMq_WVWUD8swvAKs_KKoN9ruB9o"  
+        self.api_key = "YOUR API KEY"  
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel("gemini-1.5-flash")
 
