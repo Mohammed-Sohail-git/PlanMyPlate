@@ -9,7 +9,7 @@ import threading
 class RecipeDetailsScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        genai.configure(api_key="AIzaSyCOZh59AMq_WVWUD8swvAKs_KKoN9ruB9o")
+        genai.configure(api_key="YOUR API KEY")
         self.model = genai.GenerativeModel("gemini-1.5-flash")
         self.original_ingredients = ""
         self.updated_ingredients = ""
